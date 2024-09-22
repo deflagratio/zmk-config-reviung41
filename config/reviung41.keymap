@@ -67,9 +67,9 @@
 // |    |  ]  |  !  |  @  |  #   |  \  |   | 0      | 1  | 2  | 3  | .  |   |
 //                       |     | ADJ | BSPC |    |     |
                         bindings = <
-   &trans &kp PIPE  &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR      &kp SUM    &kp N7    &kp N8    &kp N9    &kp MINUS &kp trans
-   &trans &kp LBKT  &kp DLLR  &kp PRCNT &kp CARET &kp FSLH      &kp EQUAL  &kp N4    &kp N5    &kp N6    &kp PLUS  &kp trans
-   &trans &kp RBKT  &kp EXCL  &kp AT    &kp HASH  &kp BSLH      &kp N0     &kp N1    &kp N2    &kp N3    &kp DOT   &kp trans
+   &trans &kp PIPE  &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR      &kp SUM    &kp N7    &kp N8    &kp N9    &kp MINUS &trans
+   &trans &kp LBKT  &kp DLLR  &kp PRCNT &kp CARET &kp FSLH      &kp EQUAL  &kp N4    &kp N5    &kp N6    &kp PLUS  &trans
+   &trans &kp RBKT  &kp EXCL  &kp AT    &kp HASH  &kp BSLH      &kp N0     &kp N1    &kp N2    &kp N3    &kp DOT   &trans
                                 &trans      &mo 3       &kp BSPC        &trans      &trans
                         >;
                 };

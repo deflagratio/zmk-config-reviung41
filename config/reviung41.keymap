@@ -35,28 +35,28 @@
                 default_layer {
 // -------------------------------------------------------------------------------------
 // |  TAB |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  |    -      |
-// | CTRL |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  |    '      |
+// | CTRL |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N(shift)   |  E  |  O  |  I  |    '      |
 // | SHFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  |  RETURN   |
 //                        | SHFT | LWR | SPC | RSE  | BSPC |
                         bindings = <
-   &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp MINUS
-   &kp LCTRL &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp SQT
-   &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp RETURN
+   &kp TAB   &kp Q &kp D &kp R &kp W           &kp B   &kp J &kp F           &kp U     &kp P   &kp SEMI &kp MINUS
+   &kp LCTRL &kp A &kp S &kp H &ht_hp LSHIFT T &kp G   &kp Y &ht_hp RSHFT N  &kp E     &kp O   &kp I    &kp SQT
+   &kp LSHFT &kp Z &kp X &kp M &kp C &kp V     &kp K   &kp L &kp COMMA      &kp DOT &kp FSLH &kp RETURN
                        &kp LSHFT  &mo 1 &kp SPACE &mo 2  &kp BSPC
                         >;
                 };
 
                 lower_layer {
 // ------------------------------------------------------------------------------------
-// | ESC |  !  |  @  |  #  |  $  | %   |   |  ^  |  &  |  *  |  (  |  )  |      DEL    |
-// |     |  _  |  +  |  {  |  }  | "|" |   |  `  | DWN |  UP | RGT | LFT |       ~     |
-// |     | Undo| Cut |Copy |Paste| Find|   | PRSC| HOME| PGUP| PGDN| END | SHFT(SPACE) |
+// | ESC |  !  |  @  |  #  |  $  | %   |   |  ^  |  &   |   *  | (   |  )  | DEL    |
+// |     |  _  |  +  |  {  |  }  | "|" |   |  `  | LEFT | DOWN | UP  | RGT |  ~     |
+// |     | Undo| Cut |Copy |Paste| Find|   | PRSC| HOME | PGUP | PGDN| END | SHFT(SPACE) |
 //                       |     |     | RET | ADJ |     |
                         bindings = <
    &kp ESC &kp EXCL  &kp AT      &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp DEL
    &trans  &kp UNDER &kp PLUS    &kp LBRC  &kp RBRC  &kp PIPE       &kp GRAVE &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp TILDE
    &trans  &kp LC(Z) &kp LC(X)   &kp LC(C) &kp LC(V) &kp LC(F)      &kp PSCRN &kp HOME &kp PG_UP &kp PG_DN &kp END   &mt RSHFT SPACE
-                                 &trans      &trans       &kp RET        &mo 3       &trans
+                                 &trans      &trans       &kp Ret        &mo 3       &trans
                         >;
                 };
 
@@ -65,12 +65,12 @@
 // |    | "|" |  &  |  *  |  (   |  )  |   | =sum() | 7  |  8 | 9  | -  |   |
 // |    |  [  |  $  |  %  |  ^   |  /  |   | =      | 4  | 5  | 6  | +  |   |
 // |    |  ]  |  !  |  @  |  #   |  \  |   | 0      | 1  | 2  | 3  | .  |   |
-//                       |     | ADJ | BSPC |    |     |
+//                       |     | ADJ | DEL |    |     |
                         bindings = <
    &trans &kp PIPE  &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR      &SUM       &kp N7    &kp N8    &kp N9    &kp MINUS &trans
    &trans &kp LBKT  &kp DLLR  &kp PRCNT &kp CARET &kp FSLH      &kp EQUAL  &kp N4    &kp N5    &kp N6    &kp PLUS  &trans
    &trans &kp RBKT  &kp EXCL  &kp AT    &kp HASH  &kp BSLH      &kp N0     &kp N1    &kp N2    &kp N3    &kp DOT   &trans
-                                &trans      &mo 3       &kp BSPC        &trans      &trans
+                                &trans      &mo 3       &kp DEL        &trans      &trans
                         >;
                 };
 

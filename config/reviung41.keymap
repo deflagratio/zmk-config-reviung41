@@ -28,6 +28,18 @@
     };
 };
 
+/ {
+    behaviors {
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <1>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
 /{
         keymap {
                 compatible = "zmk,keymap";
@@ -39,9 +51,9 @@
 // | SHFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  |  RETURN   |
 //                        | SHFT | LWR | SPC | RSE  | BSPC |
                         bindings = <
-   &kp TAB   &kp Q &kp D &kp R &kp W           &kp B   &kp J &kp F        &kp U     &kp P   &kp SEMI &kp MINUS
-   &kp LCTRL &kp A &kp S &kp H &mt LSHIFT T    &kp G   &kp Y &mt RSHFT N  &kp E     &kp O   &kp I    &kp SQT
-   &kp LSHFT &kp Z &kp X &kp M &kp C &kp V     &kp K   &kp L &kp COMMA      &kp DOT &kp FSLH &kp RETURN
+   &kp TAB   &kp Q &kp D &kp R &kp W           &kp B   &kp J &kp F        &kp U    &kp P    &kp SEMI &kp MINUS
+   &kp LCTRL &kp A &kp S &kp H &bhm LSHIFT T   &kp G   &kp Y &bhm RSHFT N &kp E    &kp O    &kp I    &kp SQT
+   &kp LSHFT &kp Z &kp X &kp M &kp C &kp V     &kp K   &kp L &kp COMMA    &kp DOT  &kp FSLH &kp FSLH &kp RETURN
                        &kp LSHFT  &mo 1 &kp SPACE &mo 2  &kp BSPC
                         >;
                 };

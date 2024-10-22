@@ -52,7 +52,7 @@
 //                                      | DEL | LWR |  SPC  | RSE  | BSPC |
                         bindings = <
    &kp TAB   &kp Q &kp D &kp R &kp W         &kp B   &kp J &kp F        &kp U     &kp P    &kp SEMI &kp MINUS
-   &kp LCTRL &bhm A LGUI &bhm LALT S &bhm LCTRL H &bhm LSHIFT T &kp G   &kp Y &bhm RSHFT N &bhm RCTRL E     &bhm RALT O    &bhm RGUI I    &kp SQT
+   &kp LCTRL &bhm LGUI A &bhm LALT S &bhm LCTRL H &bhm LSHIFT T &kp G   &kp Y &bhm RSHFT N &bhm RCTRL E &bhm RALT O &bhm RGUI I    &kp SQT
    &kp LSHFT &kp Z &kp X &kp M &kp C         &kp V   &kp K &kp L        &kp COMMA &kp DOT  &kp FSLH &kp RETURN
                        &kp DEL  &mo 1 &kp SPACE &mo 2  &kp BSPC
                         >;

@@ -63,15 +63,15 @@
 
                 lower_layer {
 // ------------------------------------------------------------------------------------
-// | ESC     |  !  |  @  |  #    | UP   | %    |   |  ^  | LCLK | RCLK | MCLCK |  )  | DEL    |
-// | CPSlock |  _  |  +  | RIGHT | DOWN | LEFT |   |  `  | LEFT | DOWN | UP    | RGT |  ~     |
-// |         | Undo| Cut |Copy   |Paste | Find |   | PRSC| HOME | PGUP | PGDN  | END | SHFT(SPACE) |
-//                       |     |     | RET | ADJ |     |
+// | ESC     |  !  |  @    | UP   |      | scrlup   |   |  ^  | LCLK | RCLK | MCLCK |  )  | DEL    |
+// | CPSlock |  _  | RIGHT | DOWN | LEFT | scrldwn  |   |  `  | LEFT | DOWN | UP    | RGT |  ~     |
+// |         | Undo| Cut   |Copy  |Paste | Find     |   | PRSC| HOME | PGUP | PGDN  | END | SHFT(SPACE) |
+//                                     |     |     | RET | ADJ |     |
                         bindings = <
-   &kp ESC  &kp EXCL  &kp AT      &kp HASH    &mmv MOVE_UP   &kp PRCNT         &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp DEL
-   &kp CAPS &kp UNDER &kp PLUS    &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT   &kp GRAVE &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans
-   &trans   &kp LC(Z) &kp LC(X)   &kp LC(C)   &kp LC(V)      &kp LC(F)         &kp PSCRN &kp HOME &kp PG_UP &kp PG_DN &kp END   &mt RSHFT SPACE
-                                     &trans            &trans          &kp RET        &mo 3       &trans
+   &kp ESC  &kp EXCL  &kp AT          &mmv MOVE_UP   &trans          &msc SCRL_UP   &kp CARET &mkp MB1 &mkp MB2  &mkp MB3  &kp RPAR  &kp DEL
+   &kp CAPS &kp UNDER &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN &kp GRAVE &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans
+   &trans   &kp LC(Z) &kp LC(X)       &kp LC(C)      &kp LC(V)       &kp LC(F)      &kp PSCRN &kp HOME &kp PG_UP &kp PG_DN &kp END   &mt RSHFT SPACE
+                                            &trans            &trans          &kp RET        &mo 3       &trans
                         >;
                 };
 

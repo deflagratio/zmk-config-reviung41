@@ -50,12 +50,12 @@
                 default_layer {
 // -------------------------------------------------------------------------------------
 // |  TAB     | Q      | D      | R       | W        |  B  |   |  J  |  F        |  U       |  P      |  ;     |    -   |
-// | CpsWrd   | A(GUI) | S(Alt) | H(GUI) | T(shift) |  G  |   |  Y  |  N(GUI) |  E(Ctrl) |  O(Alt) | I(GUI) | '      |
+// | CpsWrd   | A | S(Alt) | H(GUI) | T(shift) |  G  |   |  Y  |  N(GUI) |  E(Ctrl) |  O(Alt) | I | '      |
 // | TglLower | Z      | X      | M       | C        |  V  |   |  K  |  L        |  ,       |  .      |  /     | RETURN |
 //                                      | DEL | LWR |  SPC  | RSE  | BSPC |
                         bindings = <
    &kp TAB    &kp Q &kp D &kp R &kp W         &kp B   &kp J &kp F        &kp U     &kp P    &kp SEMI &kp MINUS
-   &caps_word &bkp A &bhm LALT S &bhm LGUI H &bhm LSHIFT T &kp G   &kp Y &bhm RSHFT N &bhm RGUI E &bhm RALT O &kp I    &kp SQT
+   &caps_word &kp A &bhm LALT S &bhm LGUI H &bhm LSHIFT T &kp G   &kp Y &bhm RSHFT N &bhm RGUI E &bhm RALT O &kp I    &kp SQT
    &tog 1  &kp Z &kp X &kp M &kp C         &kp V   &kp K &kp L        &kp COMMA &kp DOT  &kp FSLH &kp RETURN
                        &kp DEL  &mo 2 &kp SPACE &mo 3  &kp BSPC
                         >;
